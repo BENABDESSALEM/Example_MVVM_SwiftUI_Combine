@@ -26,6 +26,7 @@
 		DBA0163A2995430700BC1E46 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016392995430700BC1E46 /* ButtonStyle.swift */; };
 		DBA0163D2995539C00BC1E46 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0163C2995539C00BC1E46 /* TeamView.swift */; };
 		DBA0163F2995548500BC1E46 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0163E2995548500BC1E46 /* TeamListView.swift */; };
+		DBA016422996AD8F00BC1E46 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DBA016412996AD8F00BC1E46 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA016422996AD8F00BC1E46 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +226,9 @@
 			dependencies = (
 			);
 			name = SportsDB;
+			packageProductDependencies = (
+				DBA016412996AD8F00BC1E46 /* Kingfisher */,
+			);
 			productName = SportsDB;
 			productReference = DBA0160129919E1900BC1E46 /* SportsDB.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +257,9 @@
 				Base,
 			);
 			mainGroup = DBA015F829919E1900BC1E46;
+			packageReferences = (
+				DBA016402996AD8F00BC1E46 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DBA0160229919E1900BC1E46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,6 +503,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBA016402996AD8F00BC1E46 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBA016412996AD8F00BC1E46 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA016402996AD8F00BC1E46 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBA015F929919E1900BC1E46 /* Project object */;
 }

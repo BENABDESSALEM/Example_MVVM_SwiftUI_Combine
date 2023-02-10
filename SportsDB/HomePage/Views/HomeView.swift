@@ -10,17 +10,18 @@ import SwiftUI
 struct HomeView: View {
     @State private var layoutStyle: GridLayoutStyle = .vertical
     @ObservedObject var viewModel: HomeViewModel
-
+    
     var body: some View {
         NavigationView {
-            TeamView(viewModel: viewModel, style: layoutStyle)
-                .navigationTitle("Leagues list")
-                .navigationBarTitleDisplayMode(.automatic)
-                .padding(.top)
-            if viewModel.state  == .loading {
-                ProgressView()
+            ZStack{
+                TeamView(viewModel: viewModel, style: layoutStyle)
+                    .navigationTitle("Leagues list")
+                    .navigationBarTitleDisplayMode(.automatic)
+                    .padding(.top)
+                if viewModel.state  == .loading {
+                    ProgressView()
+                }
             }
-            
         }.searchable(text: $viewModel.searchText,placement: .navigationBarDrawer(displayMode: .always), prompt: "Search league"){
             ForEach(viewModel.filtredleagues, id: \.idLeague) { league in
                 Text(league.strLeague ?? "")
@@ -31,7 +32,7 @@ struct HomeView: View {
         .onSubmit(of: .search) {
             viewModel.fetchTeams(team: viewModel.searchText)
             hideKeyboard()
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

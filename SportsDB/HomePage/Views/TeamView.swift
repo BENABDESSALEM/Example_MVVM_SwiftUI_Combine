@@ -14,9 +14,9 @@ struct TeamView: View {
     var items: [GridItem] {
         switch style {
         case .vertical:
-            return Array(repeating: .init(.adaptive(minimum: 120)), count: 2)
+            return Array(repeating: .init(.adaptive(minimum: 130)), count: 2)
         case .horizontal:
-            return Array(repeating: .init(.fixed(120)), count: 2)
+            return Array(repeating: .init(.fixed(130)), count: 2)
         }
     }
 

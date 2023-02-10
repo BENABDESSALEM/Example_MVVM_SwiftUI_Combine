@@ -6,25 +6,26 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct DetailsView: View {
     @ObservedObject var viewModel: DetailViewModel
     var team: String
-    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10, content: {
-                AsyncImage(
-                    url: URL(string: viewModel.detail?.strTeamBanner ?? ""),
-                    content: { image in
-                        image.resizable()
+                KFImage(URL(string: viewModel.detail?.strTeamBanner ?? ""))
+                    .placeholder {
+                        // Placeholder while downloading.
+                        Image("")
+                            .resizable()
                             .scaledToFill()
-                            .frame(maxWidth: .infinity, maxHeight: 200)
-                    },
-                    placeholder: {
-                        ProgressView()
+                            .frame(maxWidth: .infinity, maxHeight: 100)
+                            .customBackground(color: .background)
                     }
-                )
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity, maxHeight: 200)
                 Text(viewModel.detail?.strCountry ?? "")
                 Text(viewModel.detail?.strLeague ?? "")
                     .font(.title)

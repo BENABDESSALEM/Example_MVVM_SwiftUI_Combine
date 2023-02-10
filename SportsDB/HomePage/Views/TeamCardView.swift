@@ -6,23 +6,22 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TeamCardView: View {
     var logoUrl: String
 
     var body: some View {
         VStack(spacing: 8) {
-            AsyncImage(
-                url: URL(string: logoUrl),
-                content: { image in
-                    image.resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(minWidth: 50, maxWidth: 130,minHeight:50,maxHeight: 130)
-                },
-                placeholder: {
-                    ProgressView()
-                }
-            )
+            KFImage(URL(string: logoUrl))
+                .placeholder {
+                    // Placeholder while downloading.
+                    Image(systemName: "arrow.2.circlepath.circle")
+                        .font(.largeTitle)
+                        .opacity(0.3)
+                }.resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(minWidth: 50, maxWidth: 130,minHeight:50,maxHeight: 130)
         }
         .accessibilityElement(children: .combine)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
