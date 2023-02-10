@@ -15,8 +15,7 @@
 		DBA016172991C05B00BC1E46 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016162991C05B00BC1E46 /* APIService.swift */; };
 		DBA0161A2991C0DC00BC1E46 /* LeaguesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016192991C0DC00BC1E46 /* LeaguesResponse.swift */; };
 		DBA0161C2991CAF700BC1E46 /* TeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0161B2991CAF700BC1E46 /* TeamsResponse.swift */; };
-		DBA016212993BEE400BC1E46 /* AutoCompleteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016202993BEE400BC1E46 /* AutoCompleteRow.swift */; };
-		DBA016232993CF8500BC1E46 /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016222993CF8500BC1E46 /* TeamRow.swift */; };
+		DBA016232993CF8500BC1E46 /* TeamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016222993CF8500BC1E46 /* TeamCardView.swift */; };
 		DBA016262993E20B00BC1E46 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016252993E20B00BC1E46 /* DetailsView.swift */; };
 		DBA0162B2993E38D00BC1E46 /* DetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0162A2993E38D00BC1E46 /* DetailsResponse.swift */; };
 		DBA0162D2994046200BC1E46 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0162C2994046200BC1E46 /* DetailViewModel.swift */; };
@@ -25,6 +24,8 @@
 		DBA0163629953BA400BC1E46 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0163529953BA400BC1E46 /* Color.swift */; };
 		DBA01638299542B700BC1E46 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA01637299542B700BC1E46 /* Text.swift */; };
 		DBA0163A2995430700BC1E46 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA016392995430700BC1E46 /* ButtonStyle.swift */; };
+		DBA0163D2995539C00BC1E46 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0163C2995539C00BC1E46 /* TeamView.swift */; };
+		DBA0163F2995548500BC1E46 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0163E2995548500BC1E46 /* TeamListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,7 @@
 		DBA016162991C05B00BC1E46 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DBA016192991C0DC00BC1E46 /* LeaguesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesResponse.swift; sourceTree = "<group>"; };
 		DBA0161B2991CAF700BC1E46 /* TeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponse.swift; sourceTree = "<group>"; };
-		DBA016202993BEE400BC1E46 /* AutoCompleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteRow.swift; sourceTree = "<group>"; };
-		DBA016222993CF8500BC1E46 /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
+		DBA016222993CF8500BC1E46 /* TeamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardView.swift; sourceTree = "<group>"; };
 		DBA016252993E20B00BC1E46 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		DBA0162A2993E38D00BC1E46 /* DetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsResponse.swift; sourceTree = "<group>"; };
 		DBA0162C2994046200BC1E46 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		DBA0163529953BA400BC1E46 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		DBA01637299542B700BC1E46 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		DBA016392995430700BC1E46 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		DBA0163C2995539C00BC1E46 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		DBA0163E2995548500BC1E46 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				DBA0161229919E8200BC1E46 /* HomeView.swift */,
-				DBA016202993BEE400BC1E46 /* AutoCompleteRow.swift */,
-				DBA016222993CF8500BC1E46 /* TeamRow.swift */,
+				DBA0163C2995539C00BC1E46 /* TeamView.swift */,
+				DBA016222993CF8500BC1E46 /* TeamCardView.swift */,
+				DBA0163E2995548500BC1E46 /* TeamListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,7 +280,6 @@
 			files = (
 				DBA0160529919E1900BC1E46 /* SportsDBApp.swift in Sources */,
 				DBA01638299542B700BC1E46 /* Text.swift in Sources */,
-				DBA016212993BEE400BC1E46 /* AutoCompleteRow.swift in Sources */,
 				DBA016262993E20B00BC1E46 /* DetailsView.swift in Sources */,
 				DBA0163429953B1400BC1E46 /* GridLayoutStyle.swift in Sources */,
 				DBA016152991BECF00BC1E46 /* HomeViewModel.swift in Sources */,
@@ -288,9 +290,11 @@
 				DBA016172991C05B00BC1E46 /* APIService.swift in Sources */,
 				DBA0163629953BA400BC1E46 /* Color.swift in Sources */,
 				DBA0161329919E8300BC1E46 /* HomeView.swift in Sources */,
+				DBA0163F2995548500BC1E46 /* TeamListView.swift in Sources */,
 				DBA0162D2994046200BC1E46 /* DetailViewModel.swift in Sources */,
 				DBA016302995149900BC1E46 /* View.swift in Sources */,
-				DBA016232993CF8500BC1E46 /* TeamRow.swift in Sources */,
+				DBA016232993CF8500BC1E46 /* TeamCardView.swift in Sources */,
+				DBA0163D2995539C00BC1E46 /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
