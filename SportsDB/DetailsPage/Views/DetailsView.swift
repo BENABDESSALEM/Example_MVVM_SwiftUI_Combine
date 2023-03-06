@@ -9,7 +9,9 @@ import SwiftUI
 import Kingfisher
 
 struct DetailsView: View {
+    
     @ObservedObject var viewModel: DetailViewModel
+    
     var team: String
     var body: some View {
         ScrollView {
