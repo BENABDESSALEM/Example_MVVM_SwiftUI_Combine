@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     @State private var layoutStyle: GridLayoutStyle = .vertical
     @ObservedObject var viewModel: HomeViewModel
     
