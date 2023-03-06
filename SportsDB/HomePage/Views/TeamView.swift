@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TeamView: View {
     @ObservedObject var viewModel: HomeViewModel
+    
+    
     var style: GridLayoutStyle
 
     var items: [GridItem] {
